@@ -32,11 +32,11 @@ public class Passenger {
 
     public static void main(String[] args){
         Passenger passenger = new Passenger("James");
-        try {
+        try{
             while (true) {
                 passenger.toString();
             }
-        } catch (Exception e) {
+        }catch(Exception e){
             System.err.println(e.getMessage());
         }
     }

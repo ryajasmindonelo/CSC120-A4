@@ -23,7 +23,7 @@ public class Train{
 
     public int getMaxCapacity(){
         int maxCapacity = 0;
-        for (Car car : cars) {
+        for (Car car : cars){
             maxCapacity += car.getCapacity();
         }
         return maxCapacity;
@@ -31,7 +31,7 @@ public class Train{
 
     public int seatsRemaining(){
         int totalSeats = 0;
-        for (Car car : cars) {
+        for (Car car : cars){
             totalSeats += car.seatsRemaining();
         }
         return totalSeats;
@@ -39,7 +39,7 @@ public class Train{
 
     public void printManifest(){
         System.out.println("Train manifest:");
-        for (int i = 0; i < cars.size(); i++) {
+        for (int i = 0; i < cars.size(); i++){
             System.out.println("Car " + (i+1) + ":");
             cars.get(i).printManifest();
         }
@@ -53,19 +53,18 @@ public class Train{
                           train.getMaxCapacity()/cars.size());
     }
     public static void main(String[] args){
-        Train myTrain = new Train(FuelType.ELECTRIC, 200, 3, 50);
+        Train myTrain = new Train(FuelType.ELECTRIC, 200, 3, 100);
     
         Passenger iris = new Passenger("Iris");
         Passenger mique = new Passenger("Mique");
         Passenger izzy = new Passenger("Izzy");
         Passenger joanne = new Passenger("Joanne");
-    
+        Passenger anna = new Passenger("Anna");
         iris.boardCar(myTrain.getCar(0));
         mique.boardCar(myTrain.getCar(0));
+        anna.boardCar(myTrain.getCar(0));
         izzy.boardCar(myTrain.getCar(1));
         joanne.boardCar(myTrain.getCar(0));
-    
-        myTrain.printManifest();
         myTrain.removeCar(1,myTrain);
         myTrain.printManifest();
     }

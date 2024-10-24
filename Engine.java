@@ -32,8 +32,9 @@ public class Engine {
         currentFuelLevel -= 1.0;
         System.out.println("Remaining fuel level: " + currentFuelLevel);
     }
+    
     public static void main(String[] args){
-        Engine myEngine = new Engine(FuelType.ELECTRIC, 100.0);
+        Engine myEngine = new Engine(FuelType.ELECTRIC, 200.0);
         try{
             while (true){
                 myEngine.go();

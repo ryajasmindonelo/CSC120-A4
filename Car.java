@@ -18,21 +18,21 @@ public class Car{
     }
 
     public void addPassenger(Passenger passenger){
-        if (seatsRemaining()==0) {
+        if (seatsRemaining()==0){
             throw new RuntimeException("Car is full");
         }
         passengers.add(passenger);
     }
 
     public void removePassenger(Passenger passenger){
-        if (!passengers.contains(passenger)) {
+        if (!passengers.contains(passenger)){
             throw new RuntimeException("Passenger not on this car");
         }
         passengers.remove(passenger);
     }
 
     public void printManifest(){
-        if (passengers.isEmpty()) {
+        if (passengers.isEmpty()){
             System.out.println("This car is EMPTY.");
         } else {
             System.out.println("Passengers on this car:");
@@ -41,6 +41,7 @@ public class Car{
             }
         }
     }
+    
     public static void main(String[] args){
         Car myCar = new Car(100);
         try{
@@ -48,7 +49,7 @@ public class Car{
                 myCar.printManifest();
             }
         }catch (Exception e){
-            System.err.println(e.getMessage()); // Out of fuel
+            System.err.println(e.getMessage());
         }
     }
 }

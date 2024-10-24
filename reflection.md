@@ -1,4 +1,5 @@
 Use this file to record your reflection on this assignment.
 
-- What are your initial impressions of how `Encapsulation` affects your programming?
-- What worked, what didn't, what advice would you give someone taking this course in the future?
+What are your initial impressions of how Encapsulation affects your programming? Encapsulation was really a new thing for me in coding, very different from Python. However, it groups variables and methods related to one another, making the program easier to understand. Encapsulation also made it easier to update the program over time when making changes, unlike for procedural programming. It is very organized, oriented, and consistent.
+
+What worked, what didn't, what advice would you give someone taking this course in the future? What worked was going over the lecture slides provided and looking at the examples we did in class. It helped me a lot for this assignment. What did not work was being stuck at one error for hours and trying to figure it out on my own, I should have asked helped from a friend or a TA. An advice I will give to someone who will take this class is to take notes during lectures, go to TA hours, or have a friend in class.
